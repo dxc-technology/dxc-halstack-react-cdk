@@ -34,7 +34,7 @@
     "baseColor": "#000000",
     "fontColor": "#ffffff",
     "accentColor": "#0067b3",
-    "logo": ""
+    "logo": "/static/media/dxc_logo_wht.3803423d.png"
   },
   "header": {
     "baseColor": "#ffffff",
@@ -42,8 +42,8 @@
     "fontColor": "#000000",
     "menuBaseColor": "#ffffff",
     "hamburguerColor": "#000000",
-    "logo": "",
-    "logoResponsive": ""
+    "logo": "/static/media/dxc_logo_blk_rgb.46e4aef2.svg",
+    "logoResponsive": "/static/media/dxc_logo_blk_rgb.46e4aef2.svg"
   },
   "inputText": {
     "selectedBaseColor": "#D9D9D9"

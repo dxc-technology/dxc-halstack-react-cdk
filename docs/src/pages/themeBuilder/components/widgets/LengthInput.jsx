@@ -71,14 +71,14 @@ const LengthInputContainer = styled.div`
 
 const StyledInput = styled.input`
   font: normal 12px/17px Open Sans;
-  width: 75px;
+  width: 80px;
 `;
 
 const StyledSelect = styled.select`
   margin-left: 5px;
   font: normal 12px/17px Open Sans;
   height: 23px;
-  width: 55px;
+  width: 80px;
 `;
 
 export default LengthInput;

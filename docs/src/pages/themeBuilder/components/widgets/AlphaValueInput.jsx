@@ -39,6 +39,7 @@ const AlphaValueInputContainer = styled.div`
 
 const StyledInput = styled.input`
   font: normal 12px/17px Open Sans;
+  width: 80px;
 `;
 
 export default AlphaValueInput;

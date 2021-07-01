@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import LogoConfig from "./widgets/LogoConfig";
+import ImageConfig from "./widgets/ImageConfig";
 import ColorPicker from "./widgets/ColorPicker";
 import DefaultInput from "./widgets/DefaultInput";
 import LengthInput from "./widgets/LengthInput";
@@ -37,7 +37,7 @@ const ThemeInput = ({
               );
             case "image":
               return (
-                <LogoConfig
+                <ImageConfig
                   propertyName={propertyName}
                   propertyValue={propertyValue}
                   onChangeCustomTheme={onChangeCustomTheme}

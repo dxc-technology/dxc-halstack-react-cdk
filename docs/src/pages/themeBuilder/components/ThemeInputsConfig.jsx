@@ -48,27 +48,20 @@ const ThemeInputsConfigContainer = styled.div`
 const InputsList = styled.div`
   width: 350px;
   padding: 25px;
-  overflow: auto;
 
-  /* width */
+  overflow: hidden auto;
   ::-webkit-scrollbar {
     width: 3px;
     height: 3px;
   }
-
-  /* Track */
   ::-webkit-scrollbar-track {
     background-color: rgb(214, 214, 214);
     border-radius: 26px;
   }
-
-  /* Handle */
   ::-webkit-scrollbar-thumb {
     background-color: rgb(102, 102, 102);
     border-radius: 26px;
   }
-
-  /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }

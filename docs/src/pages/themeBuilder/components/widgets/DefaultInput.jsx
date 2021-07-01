@@ -23,6 +23,7 @@ const DefaultInputContainer = styled.div`
 
 const StyledInput = styled.input`
   font: normal 12px/17px Open Sans;
+  width: 165px;
 `;
 
 export default DefaultInput;

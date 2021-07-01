@@ -52,19 +52,21 @@ const FontFamilyInput = ({
     </FontFamilyWidgetContainer>
   );
 };
+
 const FontFamilyWidgetContainer = styled.div`
   display: flex;
 `;
+
+const StyledInput = styled.input`
+  font: normal 12px/17px Open Sans;
+  width: 80px;
+`;
+
 const StyledSelect = styled.select`
   margin-left: 5px;
   font: normal 12px/17px Open Sans;
   height: 23px;
   width: 80px;
-`;
-
-const StyledInput = styled.input`
-  font: normal 12px/17px Open Sans;
-  width: 75px;
 `;
 
 export default FontFamilyInput;

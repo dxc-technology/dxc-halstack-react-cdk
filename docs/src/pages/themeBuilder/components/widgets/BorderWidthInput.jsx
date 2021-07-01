@@ -41,8 +41,9 @@ const BorderWidthInputContainer = styled.div`
 
 const StyledInput = styled.input`
   font: normal 12px/17px Open Sans;
-  width: 75px;
+  width: 80px;
 `;
+
 const StyledLabel = styled.span`
   font: normal 12px/17px Open Sans;
   padding-left: 5px;

@@ -118,7 +118,7 @@
     "twoShadowDepthShadowOffsetX": "length",
     "twoShadowDepthShadowOffsetY": "length",
     "twoShadowDepthShadowBlur": "length",
-    "twoShadowDepthShadowSpread": "-length",
+    "twoShadowDepthShadowSpread": "length",
     "twoShadowDepthShadowColor": "color"
   },
   "button": {

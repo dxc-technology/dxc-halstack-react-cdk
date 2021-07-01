@@ -38,6 +38,7 @@ const TextAlignInput = ({
 const StyledSelect = styled.select`
   font: normal 12px/17px Open Sans;
   height: 23px;
+  width: 87px;
 `;
 
 export default TextAlignInput;
