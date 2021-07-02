@@ -222,7 +222,7 @@
     "disabledBackgroundColorChecked": "#b1cee6",
     "disabledBackgroundColorCheckedOnDark": "#BFBFBF",
     "disabledBorderColor": "#b1cee6",
-    "disabledBorderColorOnDark": "#BFBFBF",
+    "disabledBorderColorOnDark": "#f2f2f2",
     "disabledCheckColor": "#ffffff",
     "disabledCheckColorOnDark": "#FFFFFF",
     "disabledFontColor": "#b1b1b1",

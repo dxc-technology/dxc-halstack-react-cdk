@@ -19,6 +19,7 @@ const DxcDropdown = ({
   iconSrc = "",
   iconPosition = "before",
   label = "",
+  disabled = false,
   caretHidden = false,
   onSelectOption,
   margin,
@@ -80,9 +81,9 @@ const DxcDropdown = ({
 
   return (
     <ThemeProvider theme={colorsTheme.dropdown}>
-      <DxCDropdownContainer margin={margin} size={size}>
+      <DxCDropdownContainer margin={margin} size={size} disabled={disabled}>
         <div
-          onMouseOver={expandOnHover ? handleClickListItem : undefined}
+          onMouseOver={expandOnHover && !disabled ? handleClickListItem : undefined}
           onMouseOut={handleCloseOver}
           onFocus={handleCloseOver}
           onBlur={handleCloseOver}
@@ -90,6 +91,7 @@ const DxcDropdown = ({
           <DropdownTrigger
             opened={anchorEl === null ? false : true}
             onClick={handleClickListItem}
+            disabled={disabled}
             label={label}
             caretHidden={caretHidden}
             margin={margin}
@@ -185,6 +187,7 @@ const calculateWidth = (margin, size) => {
 };
 
 const DxCDropdownContainer = styled.div`
+  opacity: ${(props) => (props.disabled ? "0.34" : "unset")};
   height: 40px;
   width: ${(props) => calculateWidth(props.margin, props.size)};
   text-overflow: ellipsis;
@@ -271,7 +274,7 @@ const DxcMenu = styled(Popper)`
 
 const DropdownTrigger = styled.button`
   padding: 0 16px;
-  cursor: pointer;
+  cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
   font-family: ${(props) => props.theme.fontFamily};
   font-size: ${(props) => props.theme.buttonFontSize};
   font-style: ${(props) => props.theme.buttonFontStyle};
@@ -304,10 +307,10 @@ const DropdownTrigger = styled.button`
   border-bottom-right-radius: ${(props) => (props.opened === true ? "0px" : props.theme.borderRadius)};
   border-bottom-left-radius: ${(props) => (props.opened === true ? "0px" : props.theme.borderRadius)};
   &:hover {
-    background-color: ${(props) => props.theme.buttonHoverBackgroundColor};
+    background-color: ${(props) => (!props.disabled ? props.theme.buttonHoverBackgroundColor : "")};
   }
   &:active {
-    background-color: #d9d9d9;
+    background-color: ${(props) => (!props.disabled ? "#d9d9d9" : "")};
   }
 `;
 
@@ -381,6 +384,7 @@ DxcDropdown.propTypes = {
   iconPosition: PropTypes.oneOf(["after", "before", ""]),
   label: PropTypes.string,
   caretHidden: PropTypes.bool,
+  disabled: PropTypes.bool,
   expandOnHover: PropTypes.bool,
   onSelectOption: PropTypes.func,
   options: PropTypes.arrayOf(

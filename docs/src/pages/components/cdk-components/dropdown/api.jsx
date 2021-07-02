@@ -120,9 +120,14 @@ const dropdownPropsTable = () => {
       <tr>
         <td>tabIndex: number</td>
         <td>0</td>
+        <td>Value of the tabindex.</td>
+      </tr>
+      <tr>
+        <td>disabled: boolean</td>
         <td>
-          Value of the tabindex.
+          <code>false</code>
         </td>
+        <td>If true, the component will be disabled.</td>
       </tr>
     </DxcTable>
   );

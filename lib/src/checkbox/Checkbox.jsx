@@ -179,15 +179,13 @@ const CheckboxContainer = styled.span`
       .MuiIconButton-label {
         & > .MuiSvgIcon-root {
           color: ${(props) => getDisabledColor(props, "border")};
+          opacity: 0.34;
         }
       }
     }
     &.Mui-checked {
       .MuiIconButton-label {
         & > .MuiSvgIcon-root {
-          &:hover {
-            color: green;
-          }
           color: ${(props) =>
             props.disabled ? getDisabledColor(props, "background") : getNotDisabledColor(props, "background")};
         }
