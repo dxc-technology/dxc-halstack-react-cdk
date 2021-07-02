@@ -5,7 +5,6 @@ const code = `() => {
     <DxcHeader
       underlined={false}
       margin="medium"
-      padding={{right:"medium"}}
       content={<DxcButton label={"Custom Button"} />}
       responsiveContent={(closeHandler) => <DxcButton label={"Custom Button"} onClick={closeHandler} />}
     />
