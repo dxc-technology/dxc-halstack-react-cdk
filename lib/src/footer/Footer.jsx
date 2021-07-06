@@ -106,7 +106,7 @@ const DxcFooter = ({
 };
 
 const FooterContainer = styled.footer`
-  padding: ${(props) => (props.refSize <= responsiveSizes.mobileLarge ? "20px 20px 20px 20px" : "20px 60px 20px 20px")};
+  padding: ${(props) => (props.refSize <= responsiveSizes.mobileLarge ? "20px 20px 20px 20px" : "24px 36px 24px 36px")};
   background-color: ${(props) => props.theme.backgroundColor};
   margin-top: ${(props) => (props.margin && typeof props.margin !== "object" ? spaces[props.margin] : "0px")};
   width: 100%;
@@ -129,11 +129,11 @@ const FooterFooter = styled.div`
   align-items: flex-end;
   flex-direction: ${(props) => (props.refSize <= responsiveSizes.mobileLarge ? "column" : "row")};
   align-items: ${(props) => (props.refSize <= responsiveSizes.mobileLarge ? "center" : "")};
+  border-top: ${(props) => props.theme.bottomLinksDividerThickness} ${(props) => props.theme.bottomLinksDividerStyle} ${(props) => props.theme.bottomLinksDividerColor};
 `;
 
 const BottomLinks = styled.div`
   padding-top: ${(props) => props.theme.bottomLinksDividerSpacing};
-  border-top: ${(props) => props.theme.bottomLinksDividerThickness} ${(props) => props.theme.bottomLinksDividerStyle} ${(props) => props.theme.bottomLinksDividerColor};
   display: inline-flex;
   flex-wrap: wrap;
   max-width: ${(props) => (props.refSize <= responsiveSizes.mobileLarge ? "100%" : "60%")};
@@ -149,7 +149,7 @@ const ChildComponents = styled.div`
   font-size: ${(props) => props.theme.customContentFontSize};
   font-style: ${(props) => props.theme.customContentFontStyle};
   font-weight: ${(props) => props.theme.customContentFontWeight};
-  min-height: 15px;
+  min-height: 16px;
   padding: ${(props) => (props.padding && typeof props.padding !== "object" ? spaces[props.padding] : "0px")};
   padding-top: ${(props) =>
     props.padding && typeof props.padding === "object" && props.padding.top ? spaces[props.padding.top] : ""};
@@ -172,6 +172,7 @@ const Copyright = styled.div`
   max-width: ${(props) => (props.refSize <= responsiveSizes.mobileLarge ? "100%" : "40%")};
   width: ${(props) => (props.refSize <= responsiveSizes.mobileLarge ? "100%" : "")};
   text-align: ${(props) => (props.refSize <= responsiveSizes.mobileLarge ? "center" : "right")};
+  padding-top: ${(props) => props.theme.bottomLinksDividerSpacing};
 `;
 
 const LogoIcon = styled.img`

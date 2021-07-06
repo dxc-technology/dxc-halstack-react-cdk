@@ -335,10 +335,10 @@
   },
   "footer": {
     "backgroundColor": "#000000",
-    "bottomLinksDividerColor": "#0067b3",
-    "bottomLinksDividerThickness": "2px",
+    "bottomLinksDividerColor": "#0095ff",
+    "bottomLinksDividerThickness": "1px",
     "bottomLinksDividerStyle": "solid",
-    "bottomLinksDividerSpacing": "6px",
+    "bottomLinksDividerSpacing": "8px",
     "bottomLinksFontFamily": "Open Sans, sans-serif",
     "bottomLinksFontSize": "0.75rem",
     "bottomLinksFontStyle": "normal",
@@ -356,12 +356,12 @@
     "customContentFontWeight": "400",
     "customContentFontColor": "",
     "fontColorBase": "#ffffff",
-    "logo": "/static/media/dxc_logo_wht.3803423d.png",
-    "logoHeight": "34px",
+    "logo": "/images/dxc_logo.svg",
+    "logoHeight": "32px",
     "logoWidth": "auto",
-    "minHeight": "120px",
-    "socialIconSize": "25px",
-    "socialIconsGutter": "15px"
+    "minHeight": "124px",
+    "socialIconSize": "24px",
+    "socialIconsGutter": "16px"
   },
   "header": {
     "backgroundColor": "#ffffff",
